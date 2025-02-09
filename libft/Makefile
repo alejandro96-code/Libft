@@ -12,7 +12,7 @@
 
 NAME = libft.a
 
-SRCS = ft_isalpha.c \
+SRC = ft_isalpha.c \
 	   ft_isdigit.c \
 	   ft_isalnum.c \
 	   ft_isascii.c \
@@ -56,10 +56,12 @@ BONUS = ft_lstadd_back_bonus.c \
 	ft_lstmap_bonus.c \
 	ft_lstnew_bonus.c \
 	ft_lstsize_bonus.c \
-	   
-OBJS = $(SRCS:.c=.o)
 
+PROTOTYPE = check_prototypes.c
+	   
+OBJS = $(SRC:.c=.o)
 BONUS_OBJS = $(BONUS:.c=.o)
+PROTOTYPE_OBJS = $(PROTOTYPE:.c=.o)
 
 CC = gcc
 
@@ -70,18 +72,18 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rc libft.a $(OBJS)
 
-$(OBJS) $(BONUS_OBJS): %.o: %.c
+$(OBJS) $(BONUS_OBJS) $(PROTOTYPE_OBJS): %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -rf $(OBJS) $(BONUS_OBJS)
+	rm -rf $(OBJS) $(BONUS_OBJS) $(PROTOTYPE_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re:	fclean all
 
-bonus:	$(OBJS) $(BONUS_OBJS)
-		@ar rcs $(NAME) $(BONUS_OBJS)
+bonus:	$(OBJS) $(BONUS_OBJS) $(PROTOTYPE_OBJS)
+		@ar rcs $(NAME) $(BONUS_OBJS) $(PROTOTYPE_OBJS)
 
 .PHONY: all clean fclean re bonus
