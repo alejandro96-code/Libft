@@ -131,7 +131,7 @@ int main() {
 
     int total = 0, correct = 0, fail = 0;
 
-    printf("VERIFICACION DE PROTOTIPOS:\n");
+    printf("\nVERIFICACION DE PROTOTIPOS:\n\n");
 
     for (int i = 0; i < sizeof(prototypes) / sizeof(prototypes[0]); i++) {
         total++;
