@@ -12,104 +12,81 @@
 
 #include <stdlib.h>
 
-int	word_count(char *str, char a)
+static	void	ft_delete(char **array, int j)
 {
 	int	i;
-	int	count;
-	int	in_word;
 
 	i = 0;
-	count = 0;
-	in_word = 0;
-	while (str[i])
+	while (i < j)
+		free (array[i++]);
+	free (array);
+}
+
+static	int	ft_count_words(char const *s, char c)
+{
+	int	i;
+	int	count_number;
+
+	i = 0;
+	count_number = 0;
+	while (s[i] != '\0')
 	{
-		if (str[i] != a && !in_word)
-		{
-			in_word = 1;
-			count++;
-		}
-		else if (str[i] == a)
-		{
-			in_word = 0;
-		}
+		while (s[i] == c)
+			i++;
+		if (s[i] != '\0')
+			count_number++;
+		while (s[i] != '\0' && s[i] != c)
+			i++;
+	}
+	return (count_number);
+}
+
+static	char	*ft_extract_substring(char const *s, char c)
+{
+	int		i;
+	char	*string;
+
+	i = 0;
+	while (s[i] != '\0' && s[i] != c)
+		i++;
+	string = malloc(sizeof(char) * (i + 1));
+	if (!string)
+		return (NULL);
+	i = 0;
+	while (s[i] != '\0' && s[i] != c)
+	{
+		string[i] = s[i];
 		i++;
 	}
-	return (count);
-}
-
-int	get_word_len(char const *str, char a, int pos)
-{
-	int	i;
-	int	count;
-	int	len;
-
-	i = 0;
-	count = 0;
-	len = 0;
-	while (str[i])
-	{
-		while (str[i] == a && str[i])
-			i++;
-		if (!str[i] && !count)
-			return (0);
-		while (str[i] != a && str[i])
-		{
-			if (count == pos)
-				len++;
-			i++;
-		}
-		count++;
-	}
-	return (len);
-}
-
-char	*get_word(char *word, char const *s, char c, int *k)
-{
-	int	i;
-
-	i = 0;
-	while (s[*k] == c && s[*k])
-		(*k)++;
-	while (s[*k] != c && s[*k])
-		word[i++] = s[(*k)++];
-	word[i] = '\0';
-	return (word);
-}
-
-void	free_all(char **str, int i)
-{
-	while (i >= 0)
-	{
-		free(str[i]);
-		i--;
-	}
-	free(str);
+	string[i] = '\0';
+	return (string);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**str;
+	char	**array;
 	int		i;
-	int		k;
+	int		j;
 
 	if (!s)
 		return (NULL);
-	str = malloc(sizeof(char *) * (word_count((char *)s, c) + 1));
-	if (!str)
+	array = malloc(sizeof(char *) * (ft_count_words(s, c) + 1));
+	if (!array)
 		return (NULL);
+	j = 0;
 	i = 0;
-	k = 0;
-	while (i < word_count((char *)s, c))
+	while (s[i] != '\0')
 	{
-		str[i] = malloc(get_word_len(s, c, i) + 1);
-		if (!str[i])
+		while (s[i] == c)
+			i++;
+		if (s[i] != '\0')
 		{
-			free_all(str, i - 1);
-			return (NULL);
+			array[j++] = ft_extract_substring(&s[i], c);
+			if (array[j - 1] == NULL)
+				return (ft_delete(array, j - 1), NULL);
 		}
-		str[i] = get_word(str[i], s, c, &k);
-		i++;
+		while (s[i] != '\0' && s[i] != c)
+			i++;
 	}
-	str[i] = NULL;
-	return (str);
+	return (array[j] = NULL, array);
 }
