@@ -60,7 +60,7 @@ int main() {
         "ft_putchar_fd(char c, int fd)",
         "ft_putendl_fd(char *s, int fd)",
         "ft_putstr_fd(char *s, int fd)",
-        "ft_split(char const *s, char c)",
+        "**ft_split(char const *s, char c)",
         "ft_strchr(const char *s, int c)",
         "ft_strdup(const char *s1)",
         "ft_striteri(char *s, void (*f)(unsigned int, char*))",
