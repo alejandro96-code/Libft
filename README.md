@@ -8,6 +8,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 📦 libft
 ├── 📄 libft.h          # Archivo de cabecera con los prototipos de funciones
+
 ├── 📄 Makefile         # Archivo para compilar la biblioteca
 ├── 📂 src             # Código fuente de las funciones
 │   ├── ft_strlen.c    # Implementación de ft_strlen
