@@ -1,12 +1,15 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <unistd.h>  // Necesario para access() y F_OK
+#include <unistd.h>
+
+//RECUERDA: PARA USAR EL CHECK DEBO COLOCARLO EN LA MISMA ALTURA DE LOS DEMAS ARCHIVOS
+//usar: gcc check_prototypes.c -o check_prototypes para compilar
+//user ./check_prototypes
 
 int verify_function_declaration(const char *filename, const char *expected_prototype) {
     FILE *file = fopen(filename, "r");
     if (!file) {
-        // Si el archivo no se puede abrir, retornamos 0 para indicar que no se encontró
         return 0;
     }
 
@@ -32,7 +35,6 @@ int verify_function_declaration(const char *filename, const char *expected_proto
 }
 
 int main() {
-    // Prototipos esperados de las funciones
     const char *prototypes[] = {
         "ft_atoi(const char *str)",
         "ft_bzero(void *s, size_t n)",
@@ -77,7 +79,6 @@ int main() {
         "ft_tolower(int c)",
         "ft_toupper(int c)"
     };
-
     const char *files[] = {
         "ft_atoi.c",
         "ft_bzero.c",
