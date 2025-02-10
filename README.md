@@ -1,3 +1,22 @@
+# 📚 Libft - Biblioteca de funciones en C
+
+## 📌 Descripción
+
+Libft es una biblioteca en C que reimplementa funciones estándar y añade otras útiles para la manipulación de memoria, cadenas de caracteres y listas enlazadas.
+
+## 📂 Estructura del Proyecto
+
+📦 libft
+├── 📄 libft.h          # Archivo de cabecera con los prototipos de funciones
+├── 📄 Makefile         # Archivo para compilar la biblioteca
+├── 📂 src             # Código fuente de las funciones
+│   ├── ft_strlen.c    # Implementación de ft_strlen
+│   ├── ft_strjoin.c   # Implementación de ft_strjoin
+│   ├── ft_memset.c    # Implementación de ft_memset
+│   ├── ft_atoi.c      # Implementación de ft_atoi
+│   ├── ft_tolower.c   # Implementación de ft_tolower
+│   ├── ...           # Otras funciones
+└── 📂 obj             # Archivos objeto generados tras la compilación
 
 ## 📂 Funciones principales
 
