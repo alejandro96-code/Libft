@@ -12,11 +12,6 @@
 
 #include "libft.h"
 
-/*
-	applies one funtion all nodes and
-	create one new list with this nodes
-*/
-
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*map;

@@ -12,10 +12,6 @@
 
 #include "libft.h"
 
-/*
-	Add one node of list in first position
-*/
-
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!lst || !new)

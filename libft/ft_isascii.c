@@ -18,10 +18,3 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_isascii('A')); // Esto es 1
-	printf("%d", ft_isascii('á')); // Esto es 0
-}
-*/

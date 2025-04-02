@@ -12,10 +12,6 @@
 
 #include "libft.h"
 
-/*
-	write one char of 1 file
-*/
-
 void	ft_putchar_fd(char c, int fd)
 {
 	if (fd != -1)

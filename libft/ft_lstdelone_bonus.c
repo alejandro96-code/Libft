@@ -12,10 +12,6 @@
 
 #include "libft.h"
 
-/*
-	Delete one node of list
-*/
-
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (lst && del)

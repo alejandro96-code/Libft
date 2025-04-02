@@ -12,10 +12,6 @@
 
 #include "libft.h"
 
-/*
-	Add one node of list
-*/
-
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*mylist;

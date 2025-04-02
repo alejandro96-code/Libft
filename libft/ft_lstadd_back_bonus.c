@@ -12,10 +12,6 @@
 
 #include "libft.h"
 
-/*
-	Add one node of list in last position
-*/
-
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	if (!new || !lst)

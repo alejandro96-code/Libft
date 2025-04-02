@@ -18,12 +18,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_isalnum('A')); // Esto es 1
-	printf("%d", ft_isalnum('a')); // Esto es 1
-	printf("%d", ft_isalnum('4')); // Esto es 1
-	printf("%d", ft_isalnum('á')); // Esto es 0
-}
-*/

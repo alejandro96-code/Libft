@@ -18,10 +18,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_isprint('b')); // Esto es 1
-	printf("%d", ft_isprint('á')); // Esto es 0
-}
-*/

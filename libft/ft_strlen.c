@@ -21,10 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_strlen('Alejandro')); // Esto es 9
-	printf("%d", ft_strlen('12348')); // Esto es 5
-}
-*/

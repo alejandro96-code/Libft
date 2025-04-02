@@ -20,12 +20,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_isalpha('A')); // Esto es 1
-	printf("%d", ft_isalpha('a')); // Esto es 1
-	printf("%d", ft_isalpha('á')); // Esto es 0
-	printf("%d", ft_isalpha('6')); // Esto es 0
-}
-*/

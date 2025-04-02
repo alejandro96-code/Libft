@@ -12,10 +12,6 @@
 
 #include "libft.h"
 
-/*
-	find and return the last node of list
-*/
-
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)

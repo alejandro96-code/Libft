@@ -12,10 +12,6 @@
 
 #include "libft.h"
 
-/*
-	write 1 str of char
-*/
-
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
