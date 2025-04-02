@@ -1,93 +1,458 @@
-# Libft
+# 📚 Libft - Biblioteca de funciones en C
+
+## 📌 Descripción
+
+Libft es una biblioteca en C que reimplementa funciones estándar y añade otras útiles para la manipulación de memoria, cadenas de caracteres y listas enlazadas.
+
+## 📂 Estructura del Proyecto
+
+📦 libft  
+├── 📄 libft.h          # Archivo de cabecera con los prototipos de funciones  
+├── 📄 Makefile         # Archivo para compilar la biblioteca  
+├── 📂 src             # Código fuente de las funciones  
+│   ├── ft_strlen.c    # Implementación de ft_strlen  
+│   ├── ft_strjoin.c   # Implementación de ft_strjoin  
+│   ├── ft_memset.c    # Implementación de ft_memset  
+│   ├── ft_atoi.c      # Implementación de ft_atoi  
+│   ├── ft_tolower.c   # Implementación de ft_tolower  
+│   ├── ...            # Otras funciones  
+└── 📂 obj             # Archivos objeto generados tras la compilación  
 
 
+## 📂 Funciones principales
 
-## Getting started
+### 🔠 **ft_strlen**
+🎯 **Objetivo:** Calcula la longitud de una cadena de caracteres.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+🔹 **Ejemplo:**
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+- **Entrada:** `"Hello"`
+- **Salida:** `5`
 
-## Add your files
+📝 📏 ➡️ `5`
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+---
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/alejandro1996rd/libft.git
-git branch -M main
-git push -uf origin main
-```
+### 🔗 **ft_strjoin**
+🎯 **Objetivo:** Une dos cadenas en una nueva.
 
-## Integrate with your tools
+🔹 **Ejemplo:**
 
-- [ ] [Set up project integrations](https://gitlab.com/alejandro1996rd/libft/-/settings/integrations)
+- **Entrada:** `"Hello"`, `"World"`
+- **Salida:** `"HelloWorld"`
 
-## Collaborate with your team
+📝 `"Hello" ➕ "World" ➡️ "HelloWorld"`
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+---
 
-## Test and Deploy
+### 💾 **ft_memset**
+🎯 **Objetivo:** Llena un bloque de memoria con un valor específico.
 
-Use the built-in continuous integration in GitLab.
+🔹 **Ejemplo:**
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+- **Entrada:** `[0, 0, 0, 0]`, Valor: `1`
+- **Salida:** `[1, 1, 1, 1]`
 
-***
+🏗️ 🟦🟦🟦🟦 ➡️ 🟥🟥🟥🟥
 
-# Editing this README
+---
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+### 🔢 **ft_atoi**
+🎯 **Objetivo:** Convierte un string a un número entero.
 
-## Suggestions for a good README
+🔹 **Ejemplo:**
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+- **Entrada:** `"  -42  "`
+- **Salida:** `-42`
 
-## Name
-Choose a self-explaining name for your project.
+📝 `"  -42  " ➡️ -42`
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+---
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+### 🔤 **ft_tolower**
+🎯 **Objetivo:** Convierte un carácter a minúscula.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+🔹 **Ejemplo:**
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+- **Entrada:** `'A'`
+- **Salida:** `'a'`
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+🔡 A ➡️ a
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+---
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+### 🔠 **ft_toupper**
+🎯 **Objetivo:** Convierte un carácter a mayúscula.
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+🔹 **Ejemplo:**
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+- **Entrada:** `'a'`
+- **Salida:** `'A'`
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+🔠 a ➡️ A
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+---
 
-## License
-For open source projects, say how it is licensed.
+### 🔢 **ft_isdigit**
+🎯 **Objetivo:** Verifica si un carácter es un dígito.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+🔹 **Ejemplo:**
+
+- **Entrada:** `'5'`
+- **Salida:** `1` (true)
+
+🔢 5 ✅
+
+---
+
+### 🔠 **ft_isalpha**
+🎯 **Objetivo:** Verifica si un carácter es una letra.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `'g'`
+- **Salida:** `1` (true)
+
+🔤 g ✅
+
+---
+
+### 🔗 **ft_strncmp**
+🎯 **Objetivo:** Compara dos cadenas hasta un número determinado de caracteres.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `"hello"`, `"hella"`, `4`
+- **Salida:** `0` (son iguales hasta 4 caracteres)
+
+📏 `"hell" == "hell"` ✅
+
+---
+
+## 🔑 **Funciones de bonus**
+
+### 💡 **ft_bzero**
+🎯 **Objetivo:** Establece a cero un bloque de memoria.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `[1, 1, 1]`, Tamaño: `2`
+- **Salida:** `[0, 0, 1]`
+
+🏗️ 🟦🟦🟦 ➡️ 🟥🟥🟦
+
+---
+
+### 🧮 **ft_calloc**
+🎯 **Objetivo:** Asigna memoria y la inicializa a cero.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** 4 elementos de tipo `int`
+- **Salida:** `[0, 0, 0, 0]`
+
+---
+
+### 📜 **ft_isalnum**
+🎯 **Objetivo:** Verifica si un carácter es alfanumérico.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `'A'`
+- **Salida:** `1` (true)
+
+🔤 A ✅
+
+---
+
+### 🔑 **ft_isascii**
+🎯 **Objetivo:** Verifica si un carácter es ASCII.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `'B'`
+- **Salida:** `1` (true)
+
+🔤 B ✅
+
+---
+
+### 🔢 **ft_isprint**
+🎯 **Objetivo:** Verifica si un carácter es imprimible.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `' '`
+- **Salida:** `1` (true)
+
+🔤 `' '` ✅
+
+---
+
+### 💬 **ft_itoa**
+🎯 **Objetivo:** Convierte un número entero en una cadena de caracteres.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `-42`
+- **Salida:** `"-42"`
+
+🔢 -42 ➡️ `"-42"`
+
+---
+
+### 🔗 **ft_lstadd_back_bonus**
+🎯 **Objetivo:** Añade un nuevo elemento al final de la lista enlazada.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `lista -> [1, 2]`, nuevo elemento: `3`
+- **Salida:** `lista -> [1, 2, 3]`
+
+---
+
+### 🔗 **ft_lstadd_front_bonus**
+🎯 **Objetivo:** Añade un nuevo elemento al principio de la lista enlazada.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `lista -> [2, 3]`, nuevo elemento: `1`
+- **Salida:** `lista -> [1, 2, 3]`
+
+---
+
+### 🔄 **ft_lstclear_bonus**
+🎯 **Objetivo:** Elimina todos los elementos de la lista.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `lista -> [1, 2, 3]`
+- **Salida:** `lista -> []`
+
+---
+
+### 🔗 **ft_lstdelone_bonus**
+🎯 **Objetivo:** Elimina un solo elemento de la lista.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `lista -> [1, 2]`, eliminar elemento: `1`
+- **Salida:** `lista -> [2]`
+
+---
+
+### 🔄 **ft_lstiter_bonus**
+🎯 **Objetivo:** Aplica una función a cada elemento de la lista.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `lista -> [1, 2]`, función: duplicar cada valor
+- **Salida:** `lista -> [2, 4]`
+
+---
+
+### 🔗 **ft_lstlast_bonus**
+🎯 **Objetivo:** Devuelve el último elemento de la lista.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `lista -> [1, 2, 3]`
+- **Salida:** `3`
+
+---
+
+### 🔗 **ft_lstmap_bonus**
+🎯 **Objetivo:** Aplica una función a cada elemento de la lista y crea una nueva lista.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `lista -> [1, 2]`, función: multiplicar por 2
+- **Salida:** `nueva lista -> [2, 4]`
+
+---
+
+## 📝 **Otros ejemplos con funciones de manipulación de memoria y cadenas**
+
+### 🛠️ **ft_memchr**
+🎯 **Objetivo:** Busca un carácter en un bloque de memoria.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `[1, 2, 3]`, buscar `2`
+- **Salida:** Dirección de la posición donde se encuentra `2`
+
+---
+
+### 🔢 **ft_memcmp**
+🎯 **Objetivo:** Compara dos bloques de memoria.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `[1, 2, 3]`, `[1, 2, 4]`
+- **Salida:** `-1` (diferente en el último byte)
+
+---
+
+### 🖇️ **ft_memcpy**
+🎯 **Objetivo:** Copia un bloque de memoria a otro.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `[1, 2, 3]`, destino: `[0, 0, 0]`
+- **Salida:** `[1, 2, 3]`
+
+---
+
+### 🚚 **ft_memmove**
+🎯 **Objetivo:** Mueve un bloque de memoria, manejando superposiciones.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `[1, 2, 3]`, mover 1 byte a la derecha
+- **Salida:** `[2, 3, 3]`
+
+---
+
+### 🔣 **ft_putchar_fd**
+🎯 **Objetivo:** Escribe un carácter en un archivo.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `'A'`, archivo: `"output.txt"`
+- **Salida:** `'A'` en `"output.txt"`
+
+---
+
+### 📧 **ft_putendl_fd**
+🎯 **Objetivo:** Escribe una cadena y un salto de línea en un archivo.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `"Hello"`, archivo: `"output.txt"`
+- **Salida:** `"Hello\n"` en `"output.txt"`
+
+---
+
+### ✏️ **ft_putstr_fd**
+🎯 **Objetivo:** Escribe una cadena de caracteres en un archivo.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `"World"`, archivo: `"output.txt"`
+- **Salida:** `"World"` en `"output.txt"`
+
+---
+
+### 🔪 **ft_split**
+🎯 **Objetivo:** Divide una cadena en varias subcadenas.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `"Hello World"`, delimitador: `" "`
+- **Salida:** `["Hello", "World"]`
+
+---
+
+### 🔍 **ft_strchr**
+🎯 **Objetivo:** Busca un carácter en una cadena.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `"Hello"`, buscar: `'o'`
+- **Salida:** Dirección de la posición de `'o'`
+
+---
+
+### 📜 **ft_strdup**
+🎯 **Objetivo:** Duplica una cadena de caracteres.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `"Hello"`
+- **Salida:** `"Hello"`
+
+---
+
+### 🧪 **ft_striteri**
+🎯 **Objetivo:** Aplica una función a cada carácter de una cadena.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `"abc"`, función: duplicar cada carácter
+- **Salida:** `"aabbcc"`
+
+---
+
+### 🔗 **ft_strlcat**
+🎯 **Objetivo:** Concatena dos cadenas con un límite de tamaño.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `"Hello"`, `"World"`, límite: `15`
+- **Salida:** `"HelloWorld"`
+
+---
+
+### 🔗 **ft_strlcpy**
+🎯 **Objetivo:** Copia una cadena con un límite de tamaño.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `"Hello"`, destino: `"Hi"`, límite: `6`
+- **Salida:** `"Hello"` en destino
+
+---
+
+### 📝 **ft_strmapi**
+🎯 **Objetivo:** Aplica una función a cada carácter de una cadena y crea una nueva.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `"abc"`, función: duplicar cada carácter
+- **Salida:** `"aabbcc"`
+
+---
+
+### 🖋️ **ft_strnstr**
+🎯 **Objetivo:** Busca una subcadena dentro de una cadena, con un límite de caracteres.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `"Hello"`, buscar: `"ll"`, límite: `5`
+- **Salida:** `"ll"`
+
+---
+
+### 🔍 **ft_strrchr**
+🎯 **Objetivo:** Busca el último carácter en una cadena.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `"Hello"`, buscar: `'l'`
+- **Salida:** Dirección de la última posición de `'l'`
+
+---
+
+### 🧹 **ft_strtrim**
+🎯 **Objetivo:** Elimina los caracteres especificados al principio y al final de una cadena.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `"  Hello  "`, eliminar: `" "`
+- **Salida:** `"Hello"`
+
+---
+
+### 🔄 **ft_substr**
+🎯 **Objetivo:** Devuelve una subcadena de una cadena.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `"Hello"`, inicio: `1`, longitud: `3`
+- **Salida:** `"ell"`
+
+---
+
+## 📜 **Licencia**
+
+Este proyecto se encuentra bajo la Licencia MIT. Para más detalles, consulta el archivo `LICENSE`.
