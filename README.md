@@ -1,7 +1,5 @@
 # 📚 Libft - Biblioteca de funciones en C
 
-## 📌 Descripción
-
 Libft es una biblioteca en C que reimplementa funciones estándar y añade otras útiles para la manipulación de memoria, cadenas de caracteres y listas enlazadas.
 
 ## 📂 Estructura del Proyecto
