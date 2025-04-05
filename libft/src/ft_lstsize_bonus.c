@@ -12,10 +12,6 @@
 
 #include "../librery/libft.h"
 
-/*
-	Returns the size of the list
-*/
-
 int	ft_lstsize(t_list *lst)
 {
 	int	i;

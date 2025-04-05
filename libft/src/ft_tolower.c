@@ -18,10 +18,3 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_tolower('B')); // Esto es b
-	printf("%d", ft_tolower('P')); // Esto es p
-}
-*/

@@ -18,10 +18,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_isdigit('5')); // Esto es 1
-	printf("%d", ft_isdigit('A')); // Esto es 0
-}
-*/

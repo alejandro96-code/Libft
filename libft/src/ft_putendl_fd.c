@@ -12,10 +12,6 @@
 
 #include "../librery/libft.h"
 
-/*
-	write 1 str of char with 1 \n' 
-*/
-
 void	ft_putendl_fd(char *s, int fd)
 {
 	ft_putstr_fd(s, fd);

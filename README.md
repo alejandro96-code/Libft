@@ -1,7 +1,5 @@
 # 📚 Libft - Biblioteca de funciones en C
 
-## 📌 Descripción
-
 Libft es una biblioteca en C que reimplementa funciones estándar y añade otras útiles para la manipulación de memoria, cadenas de caracteres y listas enlazadas.
 
 ## 📂 Estructura del Proyecto
@@ -10,18 +8,18 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 ├── 📄 libft.h          # Archivo de cabecera con los prototipos de funciones  
 ├── 📄 Makefile         # Archivo para compilar la biblioteca  
 ├── 📂 src             # Código fuente de las funciones  
-│   ├── ft_strlen.c    # Implementación de ft_strlen  
-│   ├── ft_strjoin.c   # Implementación de ft_strjoin  
-│   ├── ft_memset.c    # Implementación de ft_memset  
-│   ├── ft_atoi.c      # Implementación de ft_atoi  
-│   ├── ft_tolower.c   # Implementación de ft_tolower  
-│   ├── ...            # Otras funciones  
+│   ├── 💡ft_strlen.c    # Implementación de ft_strlen  
+│   ├── 💡ft_strjoin.c   # Implementación de ft_strjoin  
+│   ├── 💡ft_memset.c    # Implementación de ft_memset  
+│   ├── 💡ft_atoi.c      # Implementación de ft_atoi  
+│   ├── 💡ft_tolower.c   # Implementación de ft_tolower  
+│   ├── 💡...            # Otras funciones  
 └── 📂 obj             # Archivos objeto generados tras la compilación  
 
 
-## 📂 Funciones principales
+## 📂 **Funciones principales**
 
-### 🔠 **ft_strlen**
+### 💡 **ft_strlen**
 🎯 **Objetivo:** Calcula la longitud de una cadena de caracteres.
 
 🔹 **Ejemplo:**
@@ -29,11 +27,11 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 - **Entrada:** `"Hello"`
 - **Salida:** `5`
 
-📝 📏 ➡️ `5`
+🔤 📏 ➡️ `5`
 
 ---
 
-### 🔗 **ft_strjoin**
+### 💡 **ft_strjoin**
 🎯 **Objetivo:** Une dos cadenas en una nueva.
 
 🔹 **Ejemplo:**
@@ -41,11 +39,11 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 - **Entrada:** `"Hello"`, `"World"`
 - **Salida:** `"HelloWorld"`
 
-📝 `"Hello" ➕ "World" ➡️ "HelloWorld"`
+🔤 `"Hello" ➕ "World" ➡️ "HelloWorld"`
 
 ---
 
-### 💾 **ft_memset**
+### 💡 **ft_memset**
 🎯 **Objetivo:** Llena un bloque de memoria con un valor específico.
 
 🔹 **Ejemplo:**
@@ -53,11 +51,11 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 - **Entrada:** `[0, 0, 0, 0]`, Valor: `1`
 - **Salida:** `[1, 1, 1, 1]`
 
-🏗️ 🟦🟦🟦🟦 ➡️ 🟥🟥🟥🟥
+ 🟦🟦🟦🟦 ➡️ 🟥🟥🟥🟥
 
 ---
 
-### 🔢 **ft_atoi**
+### 💡 **ft_atoi**
 🎯 **Objetivo:** Convierte un string a un número entero.
 
 🔹 **Ejemplo:**
@@ -65,11 +63,11 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 - **Entrada:** `"  -42  "`
 - **Salida:** `-42`
 
-📝 `"  -42  " ➡️ -42`
+🔤 `"  -42  " ➡️ -42`
 
 ---
 
-### 🔤 **ft_tolower**
+### 💡 **ft_tolower**
 🎯 **Objetivo:** Convierte un carácter a minúscula.
 
 🔹 **Ejemplo:**
@@ -81,7 +79,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔠 **ft_toupper**
+### 💡 **ft_toupper**
 🎯 **Objetivo:** Convierte un carácter a mayúscula.
 
 🔹 **Ejemplo:**
@@ -93,7 +91,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔢 **ft_isdigit**
+### 💡 **ft_isdigit**
 🎯 **Objetivo:** Verifica si un carácter es un dígito.
 
 🔹 **Ejemplo:**
@@ -105,7 +103,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔠 **ft_isalpha**
+### 💡 **ft_isalpha**
 🎯 **Objetivo:** Verifica si un carácter es una letra.
 
 🔹 **Ejemplo:**
@@ -117,7 +115,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔗 **ft_strncmp**
+### 💡 **ft_strncmp**
 🎯 **Objetivo:** Compara dos cadenas hasta un número determinado de caracteres.
 
 🔹 **Ejemplo:**
@@ -125,11 +123,9 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 - **Entrada:** `"hello"`, `"hella"`, `4`
 - **Salida:** `0` (son iguales hasta 4 caracteres)
 
-📏 `"hell" == "hell"` ✅
+🔤 `"hell" == "hell"` ✅
 
 ---
-
-## 🔑 **Funciones de bonus**
 
 ### 💡 **ft_bzero**
 🎯 **Objetivo:** Establece a cero un bloque de memoria.
@@ -139,11 +135,11 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 - **Entrada:** `[1, 1, 1]`, Tamaño: `2`
 - **Salida:** `[0, 0, 1]`
 
-🏗️ 🟦🟦🟦 ➡️ 🟥🟥🟦
+ 🟦🟦🟦 ➡️ 🟥🟥🟦
 
 ---
 
-### 🧮 **ft_calloc**
+### 💡 **ft_calloc**
 🎯 **Objetivo:** Asigna memoria y la inicializa a cero.
 
 🔹 **Ejemplo:**
@@ -153,7 +149,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 📜 **ft_isalnum**
+### 💡 **ft_isalnum**
 🎯 **Objetivo:** Verifica si un carácter es alfanumérico.
 
 🔹 **Ejemplo:**
@@ -165,7 +161,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔑 **ft_isascii**
+### 💡 **ft_isascii**
 🎯 **Objetivo:** Verifica si un carácter es ASCII.
 
 🔹 **Ejemplo:**
@@ -177,7 +173,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔢 **ft_isprint**
+### 💡 **ft_isprint**
 🎯 **Objetivo:** Verifica si un carácter es imprimible.
 
 🔹 **Ejemplo:**
@@ -189,7 +185,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 💬 **ft_itoa**
+### 💡 **ft_itoa**
 🎯 **Objetivo:** Convierte un número entero en una cadena de caracteres.
 
 🔹 **Ejemplo:**
@@ -201,79 +197,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔗 **ft_lstadd_back_bonus**
-🎯 **Objetivo:** Añade un nuevo elemento al final de la lista enlazada.
-
-🔹 **Ejemplo:**
-
-- **Entrada:** `lista -> [1, 2]`, nuevo elemento: `3`
-- **Salida:** `lista -> [1, 2, 3]`
-
----
-
-### 🔗 **ft_lstadd_front_bonus**
-🎯 **Objetivo:** Añade un nuevo elemento al principio de la lista enlazada.
-
-🔹 **Ejemplo:**
-
-- **Entrada:** `lista -> [2, 3]`, nuevo elemento: `1`
-- **Salida:** `lista -> [1, 2, 3]`
-
----
-
-### 🔄 **ft_lstclear_bonus**
-🎯 **Objetivo:** Elimina todos los elementos de la lista.
-
-🔹 **Ejemplo:**
-
-- **Entrada:** `lista -> [1, 2, 3]`
-- **Salida:** `lista -> []`
-
----
-
-### 🔗 **ft_lstdelone_bonus**
-🎯 **Objetivo:** Elimina un solo elemento de la lista.
-
-🔹 **Ejemplo:**
-
-- **Entrada:** `lista -> [1, 2]`, eliminar elemento: `1`
-- **Salida:** `lista -> [2]`
-
----
-
-### 🔄 **ft_lstiter_bonus**
-🎯 **Objetivo:** Aplica una función a cada elemento de la lista.
-
-🔹 **Ejemplo:**
-
-- **Entrada:** `lista -> [1, 2]`, función: duplicar cada valor
-- **Salida:** `lista -> [2, 4]`
-
----
-
-### 🔗 **ft_lstlast_bonus**
-🎯 **Objetivo:** Devuelve el último elemento de la lista.
-
-🔹 **Ejemplo:**
-
-- **Entrada:** `lista -> [1, 2, 3]`
-- **Salida:** `3`
-
----
-
-### 🔗 **ft_lstmap_bonus**
-🎯 **Objetivo:** Aplica una función a cada elemento de la lista y crea una nueva lista.
-
-🔹 **Ejemplo:**
-
-- **Entrada:** `lista -> [1, 2]`, función: multiplicar por 2
-- **Salida:** `nueva lista -> [2, 4]`
-
----
-
-## 📝 **Otros ejemplos con funciones de manipulación de memoria y cadenas**
-
-### 🛠️ **ft_memchr**
+### 💡 **ft_memchr**
 🎯 **Objetivo:** Busca un carácter en un bloque de memoria.
 
 🔹 **Ejemplo:**
@@ -283,7 +207,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔢 **ft_memcmp**
+### 💡 **ft_memcmp**
 🎯 **Objetivo:** Compara dos bloques de memoria.
 
 🔹 **Ejemplo:**
@@ -293,7 +217,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🖇️ **ft_memcpy**
+### 💡 **ft_memcpy**
 🎯 **Objetivo:** Copia un bloque de memoria a otro.
 
 🔹 **Ejemplo:**
@@ -303,7 +227,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🚚 **ft_memmove**
+### 💡 **ft_memmove**
 🎯 **Objetivo:** Mueve un bloque de memoria, manejando superposiciones.
 
 🔹 **Ejemplo:**
@@ -313,7 +237,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔣 **ft_putchar_fd**
+### 💡 **ft_putchar_fd**
 🎯 **Objetivo:** Escribe un carácter en un archivo.
 
 🔹 **Ejemplo:**
@@ -323,7 +247,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 📧 **ft_putendl_fd**
+### 💡 **ft_putendl_fd**
 🎯 **Objetivo:** Escribe una cadena y un salto de línea en un archivo.
 
 🔹 **Ejemplo:**
@@ -333,7 +257,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### ✏️ **ft_putstr_fd**
+### 💡 **ft_putstr_fd**
 🎯 **Objetivo:** Escribe una cadena de caracteres en un archivo.
 
 🔹 **Ejemplo:**
@@ -343,7 +267,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔪 **ft_split**
+### 💡 **ft_split**
 🎯 **Objetivo:** Divide una cadena en varias subcadenas.
 
 🔹 **Ejemplo:**
@@ -353,7 +277,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔍 **ft_strchr**
+### 💡 **ft_strchr**
 🎯 **Objetivo:** Busca un carácter en una cadena.
 
 🔹 **Ejemplo:**
@@ -363,7 +287,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 📜 **ft_strdup**
+### 💡 **ft_strdup**
 🎯 **Objetivo:** Duplica una cadena de caracteres.
 
 🔹 **Ejemplo:**
@@ -373,7 +297,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🧪 **ft_striteri**
+### 💡 **ft_striteri**
 🎯 **Objetivo:** Aplica una función a cada carácter de una cadena.
 
 🔹 **Ejemplo:**
@@ -383,7 +307,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔗 **ft_strlcat**
+### 💡 **ft_strlcat**
 🎯 **Objetivo:** Concatena dos cadenas con un límite de tamaño.
 
 🔹 **Ejemplo:**
@@ -393,7 +317,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔗 **ft_strlcpy**
+### 💡 **ft_strlcpy**
 🎯 **Objetivo:** Copia una cadena con un límite de tamaño.
 
 🔹 **Ejemplo:**
@@ -403,7 +327,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 📝 **ft_strmapi**
+### 💡 **ft_strmapi**
 🎯 **Objetivo:** Aplica una función a cada carácter de una cadena y crea una nueva.
 
 🔹 **Ejemplo:**
@@ -413,7 +337,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🖋️ **ft_strnstr**
+### 💡 **ft_strnstr**
 🎯 **Objetivo:** Busca una subcadena dentro de una cadena, con un límite de caracteres.
 
 🔹 **Ejemplo:**
@@ -423,7 +347,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔍 **ft_strrchr**
+### 💡 **ft_strrchr**
 🎯 **Objetivo:** Busca el último carácter en una cadena.
 
 🔹 **Ejemplo:**
@@ -433,7 +357,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🧹 **ft_strtrim**
+### 💡 **ft_strtrim**
 🎯 **Objetivo:** Elimina los caracteres especificados al principio y al final de una cadena.
 
 🔹 **Ejemplo:**
@@ -443,7 +367,7 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 
 ---
 
-### 🔄 **ft_substr**
+### 💡 **ft_substr**
 🎯 **Objetivo:** Devuelve una subcadena de una cadena.
 
 🔹 **Ejemplo:**
@@ -452,6 +376,77 @@ Libft es una biblioteca en C que reimplementa funciones estándar y añade otras
 - **Salida:** `"ell"`
 
 ---
+
+
+## 🔑 **Funciones de bonus**
+
+### 💡 **ft_lstadd_back_bonus**
+🎯 **Objetivo:** Añade un nuevo elemento al final de la lista enlazada.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `lista -> [1, 2]`, nuevo elemento: `3`
+- **Salida:** `lista -> [1, 2, 3]`
+
+---
+
+### 💡 **ft_lstadd_front_bonus**
+🎯 **Objetivo:** Añade un nuevo elemento al principio de la lista enlazada.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `lista -> [2, 3]`, nuevo elemento: `1`
+- **Salida:** `lista -> [1, 2, 3]`
+
+---
+
+### 💡 **ft_lstclear_bonus**
+🎯 **Objetivo:** Elimina todos los elementos de la lista.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `lista -> [1, 2, 3]`
+- **Salida:** `lista -> []`
+
+---
+
+### 💡 **ft_lstdelone_bonus**
+🎯 **Objetivo:** Elimina un solo elemento de la lista.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `lista -> [1, 2]`, eliminar elemento: `1`
+- **Salida:** `lista -> [2]`
+
+---
+
+### 💡 **ft_lstiter_bonus**
+🎯 **Objetivo:** Aplica una función a cada elemento de la lista.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `lista -> [1, 2]`, función: duplicar cada valor
+- **Salida:** `lista -> [2, 4]`
+
+---
+
+### 💡 **ft_lstlast_bonus**
+🎯 **Objetivo:** Devuelve el último elemento de la lista.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `lista -> [1, 2, 3]`
+- **Salida:** `3`
+
+---
+
+### 💡 **ft_lstmap_bonus**
+🎯 **Objetivo:** Aplica una función a cada elemento de la lista y crea una nueva lista.
+
+🔹 **Ejemplo:**
+
+- **Entrada:** `lista -> [1, 2]`, función: multiplicar por 2
+- **Salida:** `nueva lista -> [2, 4]`
 
 ## 📜 **Licencia**
 
