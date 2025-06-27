@@ -6,7 +6,7 @@
 /*   By: alejanr2 <alejanr2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/17 13:27:29 by alejanr2          #+#    #+#             */
-/*   Updated: 2025/06/27 17:47:11 by alejanr2         ###   ########.fr       */
+/*   Updated: 2025/06/27 17:48:55 by alejanr2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,3 @@ int	ft_atoi(const char *str)
 	}
 	return (n * sign);
 }
-
-prueba
